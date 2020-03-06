@@ -88,8 +88,7 @@ class MoviesSpider(scrapy.Spider):
 
     def error_handler(self,failure):
         error_message = {
-            "m_id" : failure.meta['mid'],
-            "l_id": failure.meta['lid'],
-            "error": failure
+            "m_id" : failure.request.meta['mid'],
+            "l_id": failure.request.meta['lid']
         }
         self.error.write(json.dumps(error_message) + "\n")
