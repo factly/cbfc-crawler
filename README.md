@@ -23,7 +23,7 @@ Install the packages using the following command:
 
 
 ## Running the Crawlers
-Following are the spiders that are part of cbfc:
+Following are the spiders that are part of cbfc
 
 1. movies
 2. movies_patch
