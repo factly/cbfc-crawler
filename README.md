@@ -32,10 +32,10 @@ Execute the following commands from the root folder to run the crawler:
 
     cd cbfc
 
-To run the crawler for a default year (2018):
+To run the crawler:
 
     scrapy crawl movies
 
-To run the crawler for a specific year, 2017 for eg:
+To run the crawler for range of years, 1992 to 1993 for eg:
 
     scrapy crawl movies -a from_date=1992 -a to_date=1993
