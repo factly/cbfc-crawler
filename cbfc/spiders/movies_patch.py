@@ -43,6 +43,7 @@ class MoviesPatchSpider(scrapy.Spider):
         print(response.meta['mid'])
         details = response.css("table")[0].css("tr")
 
+        # Check if data is there or not
         if len(details) == 2:
             error_message = {
                 "m_id" : response.meta['mid'],

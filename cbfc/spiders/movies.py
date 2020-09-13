@@ -62,6 +62,7 @@ class MoviesSpider(scrapy.Spider):
 
         cutsList = list()
         
+        # check if cuts table is there or not
         if len(response.css("table")) == 2:
             cuts = response.css("table")[1].css("tr")    
             if len(cuts) > 2:

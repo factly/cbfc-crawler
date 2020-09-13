@@ -28,14 +28,14 @@ Following are the spiders that are part of cbfc
 1. movies
 2. movies_patch
 
-Execute the following commands from the root folder to run the crawler:
+movies
 
-    cd cbfc
+To run the crawler
 
-To run the crawler:
+    scrapy crawl movies -a from_date=01/01/1950 -a to_date=12/31/1951 -o list.json
 
-    scrapy crawl movies
+movies_patch
 
-To run the crawler for range of years, 1992 to 1993 for eg:
+put all the missed entries into `data/missed.json` then run below command
 
-    scrapy crawl movies -a from_date=1992 -a to_date=1993
+    scrapy crawl movies_patch -o patch_list.json
