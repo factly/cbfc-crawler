@@ -10,7 +10,7 @@ certifi==2020.6.20        # via requests
 cffi==1.14.0              # via cryptography
 chardet==3.0.4            # via requests
 constantly==15.1.0        # via twisted
-cryptography==2.9.2       # via pyopenssl, scrapy, service-identity
+cryptography==3.2         # via pyopenssl, scrapy, service-identity
 cssselect==1.1.0          # via parsel, scrapy
 hyperlink==19.0.0         # via twisted
 idna==2.10                # via hyperlink, requests
